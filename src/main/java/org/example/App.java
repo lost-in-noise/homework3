@@ -77,6 +77,16 @@ public class App {
         account.balance = faker.number().randomDouble(2, 0, 500);
 
         account.checkLimit();
+
+
+//        task7
+        Product product = new Product();
+        product.price = faker.number().randomDouble(2, 50, 500);
+        product.discount = faker.number().randomDouble(2, 5, 40);
+
+        System.out.println("პროდუქტის ფასი: " + product.price);
+        System.out.println("ფასდაკლება: " + product.discount);
+        System.out.println("საბოლოო ფასი: " + product.calculateFinalPrice());
     }
 
 
