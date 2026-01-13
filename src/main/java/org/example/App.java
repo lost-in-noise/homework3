@@ -40,6 +40,24 @@ public class App {
         System.out.println("ასაკი: " + student.getAge());
         System.out.println("ნიშანი: " + student.getGrade());
 
+
+//        task4
+        Calculator calc = new Calculator();
+
+// ვაგენერირებთ შემთხვევით რიცხვებს
+        int num1 = faker.number().randomDigitNotZero();
+        int num2 = faker.number().randomDigitNotZero();
+        int num3 = faker.number().randomDigitNotZero();
+
+// 1. ვიძახებთ ორპარამეტრიან მეთოდს
+        int result1 = calc.multiply(num1, num2);
+        System.out.println("ორი რიცხვის ნამრავლი (" + num1 + " * " + num2 + ") = " + result1);
+
+// 2. ვიძახებთ სამპარამეტრიან მეთოდს
+        int result2 = calc.multiply(num1, num2, num3);
+        System.out.println("სამი რიცხვის ნამრავლი (" + num1 + " * " + num2 + " * " + num3 + ") = " + result2);
+
+
     }
 
 
