@@ -87,6 +87,20 @@ public class App {
         System.out.println("პროდუქტის ფასი: " + product.price);
         System.out.println("ფასდაკლება: " + product.discount);
         System.out.println("საბოლოო ფასი: " + product.calculateFinalPrice());
+
+
+//        task8
+        User userWithAddress = new User(faker.name().fullName(), faker.internet().emailAddress());
+        Address addr = new Address();
+        addr.city = faker.address().city();
+        addr.street = faker.address().streetAddress();
+
+        userWithAddress.address = addr; // ვაბამთ მისამართს იუზერს
+
+        System.out.println("მომხმარებელი: " + userWithAddress.name + " ცხოვრობს აქ: " + userWithAddress.address);
+
+
+
     }
 
 

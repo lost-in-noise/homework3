@@ -3,6 +3,7 @@ package org.example;
 public class User {
     public String name;
     public String email;
+    public Address address; // კომპოზიცია
 
     // 1. პირველი კონსტრუქტორი: იღებს მხოლოდ სახელს
     public User(String name) {
