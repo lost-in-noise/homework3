@@ -58,6 +58,17 @@ public class App {
         System.out.println("სამი რიცხვის ნამრავლი (" + num1 + " * " + num2 + " * " + num3 + ") = " + result2);
 
 
+//task5
+
+        Book myBook = new Book();
+
+// მონაცემების შევსება Faker-ით
+        myBook.title = faker.book().title();
+        myBook.author = faker.book().author();
+        myBook.pages = faker.number().numberBetween(50, 1200);
+
+// პირდაპირ ვბეჭდავთ ობიექტს
+        System.out.println(myBook);
     }
 
 
