@@ -101,6 +101,15 @@ public class App {
 
 
 
+//        task9
+        Student s1 = new Student();
+        String sharedId = faker.idNumber().valid();
+        s1.setStudentId(sharedId);
+
+        Student s2 = new Student();
+        s2.setStudentId(sharedId); // ორივე სტუდენტს აქვს ერთი და იგივე ID
+
+        System.out.println("სტუდენტების ID ერთიდაიგივეა? " + s1.equals(s2)); // გამოიტანს true-ს
     }
 
 
