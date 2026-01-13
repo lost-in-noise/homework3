@@ -69,6 +69,14 @@ public class App {
 
 // პირდაპირ ვბეჭდავთ ობიექტს
         System.out.println(myBook);
+
+
+//        task6
+        BankAccount account = new BankAccount();
+// ვაგენერირებთ შემთხვევით ბალანსს 0-დან 500-მდე
+        account.balance = faker.number().randomDouble(2, 0, 500);
+
+        account.checkLimit();
     }
 
 
